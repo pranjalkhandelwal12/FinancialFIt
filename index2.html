@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#3F51B5">
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="assets/logo white.png">
+    <title>Financial Fit</title>
+    <script src="https://kit.fontawesome.com/f5a9ff35dc.js" crossorigin="anonymous"></script>
+    <link href="https://app.moneytracker.cc/static/css/1.bace0069.chunk.css" rel="stylesheet">
+    <link href="https://app.moneytracker.cc/static/css/main.2e13738e.chunk.css" rel="stylesheet">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XL98L737PP"></script>
+    <script>
+        function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-XL98L737PP")</script>
+</head>
+
+<body>
+    <div id="root">
+        <nav class="open">
+            <div class="ui blue fluid vertical labeled icon menu">
+                <a class="active item" href="/"><i aria-hidden="true" class="newspaper icon"></i>Budget</a>
+                <a class="item" href="/transactions"><i class="fa-solid fa-cash-register"></i>Budget</a>
+                <a class="item" href="/accounts"><i aria-hidden="true" class="fa-solid fa-money-bill-wave credit card icon"></i></i>Accounts</a>
+                <a class="item" href="/reports"><i aria-hidden="true" class="fa-solid fa-file-lines line chart icon"></i>Reports</a>
+                <a class="item" href="/budget"><i aria-hidden="true" class="shopping basket icon"></i>Budget</a>
+                <a class="item" href="/settings"><i aria-hidden="true" class="options icon"></i>Settings</a></div>
+        </nav>
+        <header>
+            <div class="ui header"><i aria-hidden="true" class="bars icon"></i>
+                <h2 class="content">Dashboard</h2>
+            </div>
+        </header>
+        <div class="container">
+            <div class="container-full-page">
+                <div class="ui grid">
+                    <div class="row">
+                        <div class="six wide computer sixteen wide mobile column">
+                            <div class="section">
+                                <div class="section__header active"><i aria-hidden="true" class="dropdown icon"></i>
+                                    <h3>Net Worth</h3>
+                                    <div class="net-worth__total"><span class="mono negative">NaN INR</span></div>
+                                </div>
+                                <div class="section__body">
+                                    <div class="account-widget">
+                                        <div class="account-widget-group">
+                                            <div class="account-widget-group__header"><span
+                                                    class="account-widget-group__name">Cash</span><span
+                                                    class="account-widget-group__total"><span class="mono negative">NaN
+                                                        INR</span></span></div>
+                                            <div class="account-widget-account">
+                                                <div class="account-widget-account__name"><a
+                                                        href="/transactions/A1697615107185">Rachit Avasthi</a></div>
+                                                <div class="account-widget-account__balance"><span
+                                                        class="mono positive">45,000.00 INR</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ten wide computer sixteen wide mobile column">
+                            <div class="section">
+                                <div class="section__header active"><i aria-hidden="true" class="dropdown icon"></i>
+                                    <h3>New Transaction</h3>
+                                </div>
+                                <div class="section__body">
+                                    <div class="ui top attached two item menu"><a class="red active item">Expense</a><a
+                                            class="green item">Income</a></div>
+                                    <div class="ui bottom attached segment">
+                                        <form class="ui form transaction-form">
+                                            <div class="fields">
+                                                <div class="eleven wide field mobile-with-margin"><label>From</label>
+                                                    <div role="listbox" aria-expanded="false"
+                                                        class="ui selection dropdown" tabindex="0">
+                                                        <div aria-atomic="true" aria-live="polite" role="alert"
+                                                            class="divider text">Rachit Avasthi</div><i
+                                                            aria-hidden="true" class="dropdown icon"></i>
+                                                        <div class="menu transition">
+                                                            <div role="option" aria-checked="true" aria-selected="true"
+                                                                class="active selected item"
+                                                                style="pointer-events: all;"><span
+                                                                    class="description">Cash</span><span
+                                                                    class="text">Rachit Avasthi</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="five wide field mobile-with-margin input-right no-label">
+                                                    <div class="ui right labeled input"><input required="" min="0.01"
+                                                            step="0.01" type="number" value="">
+                                                        <div class="ui label label">INR</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="transaction-form-grid">
+                                                <div class="transaction-form-grid__column-wide">
+                                                    <div class="transaction-form-grid__field">
+                                                        <div class="field"><label>Tags</label>
+                                                            <div role="combobox" aria-expanded="false"
+                                                                class="ui multiple search selection dropdown"><input
+                                                                    aria-autocomplete="list" autocomplete="off"
+                                                                    class="search" tabindex="0" type="text"
+                                                                    value=""><span class="sizer"></span>
+                                                                <div aria-atomic="true" aria-live="polite" role="alert"
+                                                                    class="divider default text">Choose existing tags or
+                                                                    add new</div><i aria-hidden="true"
+                                                                    class="dropdown icon"></i>
+                                                                <div aria-multiselectable="true" role="listbox"
+                                                                    class="menu transition">
+                                                                    <div role="option" aria-checked="false"
+                                                                        aria-selected="true" class="selected item"
+                                                                        style="pointer-events: all;"><span
+                                                                            class="text">Kharcha</span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="transaction-form-grid__field">
+                                                        <div class="field">
+                                                            <div class="ui input"><input placeholder="Note" type="text"
+                                                                    value=""></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="transaction-form-grid__column-narrow">
+                                                    <div class="transaction-form-grid__field">
+                                                        <div class="field">
+                                                            <div class="ui fluid input"><input required="" type="date"
+                                                                    value="2023-10-18"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="transaction-form-grid__field"><button
+                                                            class="ui fluid primary button">Add Expense</button></div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <div class="section__header active"><i aria-hidden="true" class="dropdown icon"></i>
+                                    <h3>Recent Transactions</h3>
+                                </div>
+                                <div class="section__body">
+                                    <div class="ui segment transactions-list__wrapper">
+                                        <div class="ui inverted dimmer">
+                                            <div class="content">
+                                                <div class="ui active centered inline loader"></div>
+                                            </div>
+                                        </div>
+                                        <div class="transaction-item">
+                                            <div class="transaction-item__date">18 Oct</div>
+                                            <div class="transaction-item__info">Rachit Avasthi<i aria-hidden="true"
+                                                    class="grey arrow right icon"></i>
+                                                <div class="ui label">Kharcha</div><span
+                                                    class="transaction-item__info__note"></span>
+                                            </div>
+                                            <div class="transaction-item__amount"><span class="mono negative">-5,000.00
+                                                    INR</span></div>
+                                            <div class="transaction-item__edit"><button
+                                                    class="ui basic circular icon button"><i aria-hidden="true"
+                                                        class="pencil icon"></i></button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>!function (l) { function e(e) { for (var r, t, n = e[0], o = e[1], u = e[2], f = 0, i = []; f < n.length; f++)t = n[f], p[t] && i.push(p[t][0]), p[t] = 0; for (r in o) Object.prototype.hasOwnProperty.call(o, r) && (l[r] = o[r]); for (s && s(e); i.length;)i.shift()(); return c.push.apply(c, u || []), a() } function a() { for (var e, r = 0; r < c.length; r++) { for (var t = c[r], n = !0, o = 1; o < t.length; o++) { var u = t[o]; 0 !== p[u] && (n = !1) } n && (c.splice(r--, 1), e = f(f.s = t[0])) } return e } var t = {}, p = { 2: 0 }, c = []; function f(e) { if (t[e]) return t[e].exports; var r = t[e] = { i: e, l: !1, exports: {} }; return l[e].call(r.exports, r, r.exports, f), r.l = !0, r.exports } f.m = l, f.c = t, f.d = function (e, r, t) { f.o(e, r) || Object.defineProperty(e, r, { enumerable: !0, get: t }) }, f.r = function (e) { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, f.t = function (r, e) { if (1 & e && (r = f(r)), 8 & e) return r; if (4 & e && "object" == typeof r && r && r.__esModule) return r; var t = Object.create(null); if (f.r(t), Object.defineProperty(t, "default", { enumerable: !0, value: r }), 2 & e && "string" != typeof r) for (var n in r) f.d(t, n, function (e) { return r[e] }.bind(null, n)); return t }, f.n = function (e) { var r = e && e.__esModule ? function () { return e.default } : function () { return e }; return f.d(r, "a", r), r }, f.o = function (e, r) { return Object.prototype.hasOwnProperty.call(e, r) }, f.p = "/"; var r = window.webpackJsonp = window.webpackJsonp || [], n = r.push.bind(r); r.push = e, r = r.slice(); for (var o = 0; o < r.length; o++)e(r[o]); var s = n; a() }([])</script>
+    <!--  -->
+    <script src="https://app.moneytracker.cc/static/js/1.f3ac142c.chunk.js"></script>
+    <script src="https://app.moneytracker.cc/static/js/main.4d2be108.chunk.js"></script>
+    
+</body>
+
+</html>
